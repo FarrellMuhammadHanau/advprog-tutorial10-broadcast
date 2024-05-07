@@ -16,3 +16,13 @@ Ketika mengubah port pada client menjadi 8080, maka akan terjadi error karena cl
 ![alt text](image-6.png)
 ![alt text](image-7.png)
 ![alt text](image-8.png)
+
+##  Small changes. Add some information to client
+Berikut adalah modifikasi handle_connection pada server
+![alt text](image-9.png)
+Berikut hasil tampilannya
+![alt text](image-10.png)
+![alt text](image-11.png)
+![alt text](image-12.png)
+![alt text](image-13.png)
+Pada handle_modification di server.rs, saya menggunakan macro format! untuk membuat string yang berisi "Farrell Muhammad Hanau's Computer - From Server \[address\]: \[message\]", lalu saya kirim message tersebut ke tiap client
