@@ -8,3 +8,11 @@ Bagaimana cara menjalankan? <br>
  
 Apa yang terjadi ketika mengetikkan teks pada beberapa client? <br>
     Ketika saya mengetikkan teks atau mengirimkan message dari salah satu client, maka server akan menerima message tersebut, lalu mengirimkan message tersebut ke ketiga client termasuk client yang mengirimkan message tersebut.
+
+## Modifying the websocket port
+![alt text](image-4.png)
+![alt text](image-5.png)
+Ketika mengubah port pada client menjadi 8080, maka akan terjadi error karena client tidak dapat terkoneksi dengan port tersebut. Hal ini karena server melakukan bind dengan port 2000 bukan port 8080. Untuk itu, saya harus merubah code pada server untuk melakukan bind pada port 8080 sehingga client dapat terconnect dengan server.
+![alt text](image-6.png)
+![alt text](image-7.png)
+![alt text](image-8.png)
